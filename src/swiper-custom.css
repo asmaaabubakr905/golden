@@ -1,0 +1,53 @@
+/* تخصيص أسهم Swiper */
+.custom-swiper-nav {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0 rgba(16,30,54,0.08);
+  border: 1.5px solid #f59e42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.custom-swiper-nav.swiper-button-prev {
+  left: -28px;
+}
+.custom-swiper-nav.swiper-button-next {
+  right: -28px;
+}
+.custom-swiper-nav::after {
+  font-size: 22px;
+  color: #f59e42;
+  font-weight: bold;
+}
+
+/* تخصيص النقاط (pagination) */
+.custom-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+.custom-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #f59e42;
+  opacity: 0.3;
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: all 0.2s;
+}
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background: #f59e42;
+  opacity: 1;
+  width: 18px;
+  height: 12px;
+  border-radius: 8px;
+} 
